@@ -1,16 +1,22 @@
 <template>
-  <div class="home">
-    <Editor />
-  </div>
+	<div class="d-flex">
+		<folder />
+	</div>
 </template>
 
 <script>
-import Editor from "@/components/Editor";
+import Folder from "@/components/Folder";
 
 export default {
 	name: "home",
 	components: {
-		Editor
+		Folder
 	}
 };
 </script>
+
+<style lang="scss">
+	.d-flex {
+		display: flex;
+	}
+</style>
